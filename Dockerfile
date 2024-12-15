@@ -18,11 +18,12 @@ RUN apt-get update && apt-get install -y \
     && rm -rf /var/lib/apt/lists/*
 
 # Set up the work directory
-WORKDIR /app
+WORKDIR /joshping_project
 
 # Copy source file and make file into container
-COPY protocol.cpp .
+COPY icmp_ping.c .
 COPY Makefile .
+RUN make
 
 # Keep container running.. What?
 CMD ["tail", "-f", "/dev/null"]

@@ -1,0 +1,39 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+CC	Makefile	/^CC=gcc$/;"	m
+CFLAGS	Makefile	/^CFLAGS=-Wall Wextra$/;"	m
+ICMP_HDR_LEN	icmp_ping.c	15;"	d	file:
+ICMP_HEADER_LEN	claude_ping.c	12;"	d	file:
+OBJ	Makefile	/^OBJ=$(SRC:.c=.o)$/;"	m
+PACKET_SIZE	claude_ping.c	11;"	d	file:
+PACKET_SIZE	icmp_ping.c	14;"	d	file:
+SRC	Makefile	/^SRC=icmp_ping.c$/;"	m
+TARGET	Makefile	/^TARGET=joshping$/;"	m
+all_exists	scripts/docker_cleanup.sh	/^all_exists(){$/;"	f
+checksum	claude_ping.c	/^unsigned short checksum(unsigned short* buff, int len) {$/;"	f
+checksum	icmp_ping.c	/^unsigned short checksum(unsigned short* buff, int len){$/;"	f
+clean_images	scripts/docker_cleanup.sh	/^clean_images(){$/;"	f
+cleanup_ping	claude_ping.c	/^void cleanup_ping(struct ping_ctx* ctx) {$/;"	f
+cleanup_ping	icmp_ping.c	/^void cleanup_ping(struct ping_ctx* ctx){$/;"	f
+count	icmp_ping.c	/^    int count;$/;"	m	struct:ping_ctx	file:
+dst	claude_ping.c	/^    struct sockaddr_in dst;$/;"	m	struct:ping_ctx	typeref:struct:ping_ctx::sockaddr_in	file:
+dst	icmp_ping.c	/^    struct sockaddr_in dst;$/;"	m	struct:ping_ctx	typeref:struct:ping_ctx::sockaddr_in	file:
+init_ping	claude_ping.c	/^struct ping_ctx* init_ping(const char* dest_ip) {$/;"	f
+init_ping	icmp_ping.c	/^struct ping_ctx* init_ping(const char * dst){$/;"	f
+main	claude_ping.c	/^int main(int argc, char* argv[]) {$/;"	f
+main	icmp_ping.c	/^int main(int argc , char* argv[]){$/;"	f
+ping_ctx	claude_ping.c	/^struct ping_ctx {$/;"	s	file:
+ping_ctx	icmp_ping.c	/^struct ping_ctx{$/;"	s	file:
+receive_ping	claude_ping.c	/^int receive_ping(struct ping_ctx* ctx) {$/;"	f
+receive_ping	icmp_ping.c	/^int receive_ping(struct ping_ctx* ctx){$/;"	f
+recv_thread	icmp_ping.c	/^    pthread_t recv_thread;$/;"	m	struct:ping_ctx	file:
+running	icmp_ping.c	/^    volatile int running;$/;"	m	struct:ping_ctx	file:
+send_ping	claude_ping.c	/^int send_ping(struct ping_ctx* ctx) {$/;"	f
+send_ping	icmp_ping.c	/^int send_ping( struct ping_ctx* ctx){$/;"	f
+send_thread	icmp_ping.c	/^    pthread_t send_thread;$/;"	m	struct:ping_ctx	file:
+sock_fd	claude_ping.c	/^    int sock_fd;$/;"	m	struct:ping_ctx	file:
+sock_fd	icmp_ping.c	/^    int sock_fd;$/;"	m	struct:ping_ctx	file:
